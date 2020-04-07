@@ -8,5 +8,5 @@ RUN apt-get install nginx -y
 
 COPY omnifood/. /var/www/html/
 RUN chmod -R +rx /var/www/html/
-EXPOSE 80
+EXPOSE 
 CMD nginx && tail -f /dev/null
